@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace TasQuest
 {
-    public partial class Form1 : Form
+    public partial class TasQuest : Form
     {
-        public Form1()
+        public TasQuest()
         {
             InitializeComponent();
+        }
+
+        private void RunAway_Button_MouseClick(object sender, MouseEventArgs e)
+        {
+            message_box.Text = "しょうぶのさいちゅうにせなかをむけることなんてできない!";
+            message_box.Visible = true;
         }
     }
 }
